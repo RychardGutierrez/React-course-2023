@@ -4,50 +4,50 @@
 
 - [x] Introducción
 
-- [ x ] ¿Qué es React?
+- [x] ¿Qué es React?
 
-- [ x ] Aviso sobre la documentación
+- [x] Aviso sobre la documentación
  
-- [ x ] ¿De dónde sale React?
+- [x] ¿De dónde sale React?
  
-- [ x ] 7 razones para aprender React
+- [x] 7 razones para aprender React
 
-- [ x ] ¿Por qué React? Creando un botón sin React
+- [x] ¿Por qué React? Creando un botón sin React
 
-- [ x ] Cómo usar React sin dependencias
+- [x] Cómo usar React sin dependencias
 
-- [ x ] Crea tu primer elemento
+- [x] Crea tu primer elemento
 
-- [ x ] Elemento con atributos
+- [x] Elemento con atributos
  
-- [ x ] Fragment
+- [x] Fragment
 
-- [ x ] JSX desde cero
+- [x] JSX desde cero
  
-- [ x ] Crea tu primera aplicación con React
+- [x] Crea tu primera aplicación con React
 
-- [ x ] Crear componentes en React
+- [x] Crear componentes en React
 
-- [ x ] Tu primer proyecto práctico con React
+- [x] Tu primer proyecto práctico con React
 
-- [ x ] Estilos en React
+- [x] Estilos en React
 
-- [ x ] Reutilización de componentes: Props
+- [x] Reutilización de componentes: Props
 
-- [ x ] Estila contenedor para separaciones y no componentes
+- [x] Estila contenedor para separaciones y no componentes
 
-- [ x ] Pasando booleanos como props
+- [x] Pasando booleanos como props
 
-- [ x ] Pasando funciones como props
+- [x] Pasando funciones como props
 
-- [ x ] Elementos como props
+- [x] Elementos como props
 
-- [ x ] Diferencia entre elemento y componente
+- [x] Diferencia entre elemento y componente
 
-- [ x ] Las props son inmutables
+- [x] Las props son inmutables
 
-- [ x ] La prop especial children
+- [x] La prop especial children
 
-- [ x ] Pasar objeto como props
+- [x] Pasar objeto como props
 
-- [ x ] State en React
+- [x] State en React
