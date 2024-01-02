@@ -1,4 +1,4 @@
-const MOVIES_URL = ' https://www.omdbapi.com/?apikey=4287ad07&s='; // TODO: remove this
+const MOVIES_URL = ' https://www.omdbapi.com/?apikey=xxxxxxx&s=';
 
 export const searchMovies = async ({ search }) => {
   if (search === '') {
