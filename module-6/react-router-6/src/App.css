@@ -1,0 +1,6 @@
+nav a.is-active {
+  font-weight: bold;
+  pointer-events: none;
+  border-color: #ffb300;
+  color: #ffb300;
+}
