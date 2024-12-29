@@ -1,55 +1,62 @@
 export interface Comment {
-  title: string
-  message: string
-  preview?: boolean
+  title: string;
+  message: string;
+  preview?: boolean;
 }
 
 export interface CommentWithId extends Comment {
-  id: string
+  id: string;
 }
 
 // ApiKey could be public as service is 100% free
-const apiKey = '$2b$10$jOpMXFaiNgsyhru7Nt.GouBUmHStWY9IRZR7vCocenxkK.vv7tDsu'
+const apiKey = '$2a$10$8QXr7C3T1kd8fiKFPKTlbe7KiLmlPLnr/8h62W1/iQR.VRtIfUfJ2';
 
 export const getComments = async () => {
-  const response = await fetch('https://api.jsonbin.io/v3/b/643fbe2bc0e7653a05a77535', {
-    method: 'GET',
-    headers: {
-      'Content-Type': 'application/json',
-      'X-Access-Key': apiKey
+  const response = await fetch(
+    'https://api.jsonbin.io/v3/b/676c41cde41b4d34e46b107c',
+    {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Access-Key': apiKey,
+      },
     }
-  })
+  );
 
   if (!response.ok) {
-    throw new Error('Failed to fetch comments.')
+    throw new Error('Failed to fetch comments.');
   }
 
-  const json = await response.json()
+  const json = await response.json();
 
-  return json?.record
-}
+  return json?.record;
+};
 
-const delay = async (ms: number) => await new Promise(resolve => setTimeout(resolve, ms))
+const delay = async (ms: number) =>
+  await new Promise((resolve) => setTimeout(resolve, ms));
 
 export const postComment = async (comment: Comment) => {
-  const comments = await getComments()
+  const comments = await getComments();
 
-  const id = crypto.randomUUID()
-  const newComment = { ...comment, id }
-  const commentsToSave = [...comments, newComment]
+  const id = crypto.randomUUID();
+  const newComment = { ...comment, id };
+  const commentsToSave = [...comments, newComment];
 
-  const response = await fetch('https://api.jsonbin.io/v3/b/643fbe2bc0e7653a05a77535', {
-    method: 'PUT',
-    headers: {
-      'Content-Type': 'application/json',
-      'X-Access-Key': import.meta.env.VITE_PUBLIC_API_KEY
-    },
-    body: JSON.stringify(commentsToSave)
-  })
+  const response = await fetch(
+    'https://api.jsonbin.io/v3/b/676c41cde41b4d34e46b107c',
+    {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Access-Key': apiKey,
+      },
+      body: JSON.stringify(commentsToSave),
+    }
+  );
 
   if (!response.ok) {
-    throw new Error('Failed to post comment.')
+    throw new Error('Failed to post comment.');
   }
 
-  return newComment
-}
+  return newComment;
+};
